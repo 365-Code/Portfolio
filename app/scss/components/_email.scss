@@ -1,0 +1,32 @@
+.email{
+    @apply fixed right-16 bottom-0 flex flex-col gap-0;
+    &-link{
+        @apply no-underline tracking-widest p-[10px];
+        writing-mode: vertical-rl;
+        color: var(--light-slate);
+        font-size: var(--tsm2);
+        outline: 2px dashed transparent;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            transform: translateY(-4px);
+            color: var(--theme-color);
+        }
+        &:last-child{
+            margin-bottom: 2rem;
+        }
+        &:focus{
+            transform: translateY(-4px);
+            outline-color: var(--theme-color);
+            color: var(--theme-color);
+        }
+    }
+    &::after{
+        content: "";
+        display: block;
+        width: 2px;
+        height: 90px;
+        background-color: var(--light-slate);
+        margin: 0 auto;
+    }
+    
+}

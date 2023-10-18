@@ -1,0 +1,39 @@
+.social-icons{
+    @apply fixed bottom-0 left-16;
+    &-list{
+        @apply list-none flex flex-col gap-3;
+        &-item{
+            @apply flex justify-center items-center;
+            font-size: var(--tlarge2);
+            transition: 0.3s ease-in-out;
+            &-link{
+                @apply p-[10px];
+                color: var(--lightest-slate);
+                outline: 2px dashed transparent;
+                transition: 0.3s ease-in-out;
+                &:hover{
+                    color: var(--theme-color);
+                }
+                &:focus{
+                    outline-color: var(--theme-color);
+                    transform: translateY(-4px);
+                    color: var(--theme-color);
+                }
+            }
+            a:hover{
+                transform: translateY(-4px);
+            }
+            &:last-child{
+                margin-bottom: 2rem;
+            }
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: 2px;
+            height: 90px;
+            background-color: var(--light-slate);
+            margin: 0 auto;
+        }
+    }
+}
