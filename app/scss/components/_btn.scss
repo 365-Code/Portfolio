@@ -1,11 +1,12 @@
 .btn{
-    @apply py-3 px-4 outline-none no-underline bg-transparent;
+    @apply py-3 px-4 font-semibold outline-none no-underline bg-transparent;
     color: var(--theme-color);
     border: 1px solid var(--theme-color);
     font-size: var(--tsm);
     border-radius: 4px;
     &:hover, &:focus{
-        background-color: var(--lightest-navy);
+        background-color: var(--theme-color);
+        color: var(--lightest-slate);
     }
 
 }
