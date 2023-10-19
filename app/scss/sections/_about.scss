@@ -11,7 +11,7 @@
                 counter-increment: title;
                 content: "0" counter(title) ".";
                 margin-right: 0.5rem;
-                border: var(--theme-color)
+                color: var(--theme-color)
             }
             &::after{
                 content: "";
@@ -72,6 +72,7 @@
                     background-color: #00000000
                 }
                 .overlay-border{
+                    background-color: var(--theme-color);
                     top: 0.5rem;
                     left: 0.5rem;
 

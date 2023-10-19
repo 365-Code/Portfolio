@@ -2,8 +2,8 @@ import Image from 'next/image'
 import React from 'react'
 import sohail from "@/public/sohail.jpeg"
 import { Raleway } from 'next/font/google'
-
 const raleway = Raleway({subsets:['latin']})
+
 const About = () => {
   return (
 

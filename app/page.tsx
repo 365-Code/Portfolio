@@ -5,14 +5,16 @@ import SocialIcons from './components/SocialIcons'
 import Email from './components/Email'
 import Hero from './sections/Hero'
 import About from './sections/About'
+import Experience from './sections/Experience'
 
 const Home = () => {
   return (
     <div className='app'>
       <Navbar/>
       <main>
-      <Hero/>
-      <About/>
+        <Hero/>
+        <About/>
+        <Experience/>
       </main>
       <SocialIcons/>
       <Email/>
