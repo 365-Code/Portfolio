@@ -7,8 +7,6 @@ const raleway = Raleway({subsets:['latin']})
 
 const Hero = () => {
   return (
-    <main>
-
     <div className='hero'>
         <h1 className="hero-title">
             Hi my name is
@@ -29,7 +27,6 @@ const Hero = () => {
         </div>
 
     </div>
-    </main>
   )
 }
 

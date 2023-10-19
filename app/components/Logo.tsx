@@ -16,7 +16,7 @@ function Logo() {
           /> */}
 
           <g id="K" transform="translate(30.000000, 70.000000)">
-          <text className={`${firaCode.className} font-medium`} fill="currentColor" font-size="60" font-weight="300">
+          <text className={`${firaCode.className} font-medium`} fill="currentColor" fontSize="60" fontWeight="300">
             <tspan x="0" y="0">
             S</tspan>
             </text>
