@@ -4,17 +4,16 @@ import Button from '../components/Button'
 import { Raleway } from 'next/font/google'
 
 const raleway = Raleway({subsets:['latin']})
-
 const Hero = () => {
   return (
-    <div className='hero'>
+    <div id='hero' className={`hero ${raleway.className}`}>
         <h1 className="hero-title">
             Hi my name is
         </h1>
-        <h2 className={`hero-title-large ${raleway.className}`}>
+        <h2 className={`hero-title-large`}>
             Sohail Ahmed
         </h2>
-        <h2 className={`hero-title-large hero-title-sub ${raleway.className}`}>
+        <h2 className={`hero-title-large hero-title-sub`}>
             I craft things for web.
         </h2>
         <p className="hero-text">

@@ -8,6 +8,7 @@
             margin-bottom: 2rem;
             font-size: var(--tx2large);
             font-weight: 700;
+            counter-increment: title;
             &::before{
                 counter-increment: title;
                 content: "0" counter(title) ".";
@@ -31,38 +32,22 @@
         grid-template-columns: 20% 80%;
         gap: 1rem;
         .exp-slider{
-            list-style-type: none;
-            position: relative;
-            height: max-content;
+            @apply list-none relative h-max;
             .underline{
+                @apply absolute left-[-0.5px] top-0 w-[3px] h-[2.5rem];
                 background-color: var(--theme-color);
-                position: absolute;
-                left: -0.5px;
-                top: 0;
-                width: 3px;
-                height: 10%;
                 transition: 0.3s ease-in-out;
             }
-            &::before{
-                position: absolute;
-                left: 0px;
+            /* &::before{
+                @apply absolute left-0 h-[10px] w-[1px];
                 content: "";
-                height: 10%;
-                width: 1px;
                 background-color: var(--lightest-navy);
-            }
+            } */
             &-item{
-                height: 2.5rem;
-                padding: 0 1.5rem;
-                display: flex;
-                vertical-align: middle;
-                cursor: pointer;
-                width: 100%;
+                @apply h-[2.5rem] py-0 px-6 flex align-middle cursor-pointer w-full;
                 span{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    column-rule: var(--slate);
+                    @apply flex justify-center items-center ;
+                    color: var(--slate);
                     font-size: var(--tsm1);
                 }
                 &:hover{
@@ -90,12 +75,7 @@
                 color: var(--light-slate);
             }
             &-list{
-                list-style-type: none;
-                display: flex;
-                flex-direction: column;
-                gap: 1;
-                margin-top: 1rem;
-                padding-left: 20px;
+                @apply list-none flex flex-col gap-1 mt-4 pl-[20px] ;
                 &-item{
                     position: relative;
                     font-weight: 500;

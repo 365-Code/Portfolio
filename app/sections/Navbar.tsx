@@ -9,10 +9,10 @@ const firaCode = Fira_Code({subsets:['latin']})
 const Navbar = () => {
 
   const sectionLinks = [
-    {name: "About", link: "/about"},
-    {name: "Experience", link: "/experience"},
-    {name: "Work", link: "/work"},
-    {name: "Contact", link: "/contact"},
+    {name: "About", link: "#about"},
+    {name: "Experience", link: "#experience"},
+    {name: "Work", link: "#work"},
+    {name: "Contact", link: "#contact"},
   ]
 
   return (

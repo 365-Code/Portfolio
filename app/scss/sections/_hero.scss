@@ -1,5 +1,5 @@
 .hero{
-    @apply flex flex-col mt-16 gap-4 justify-center items-start min-h-[60vh];
+    @apply flex flex-col mt-16 gap-2 justify-center items-start min-h-[60vh];
     &-title{
         @apply font-semibold;
         color: var(--theme-color);

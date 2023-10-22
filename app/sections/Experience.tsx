@@ -1,10 +1,10 @@
 "use client"
 import Link from 'next/link';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
-import { Raleway } from 'next/font/google'
+import { Fira_Code, Raleway } from 'next/font/google'
 const raleway = Raleway({subsets:['latin']})
-
+const firaCode = Fira_Code({subsets:['latin']})
 const Experience = () => {
 
     const experiences = [
@@ -45,6 +45,15 @@ const Experience = () => {
 
     const [selected, setSelected] = useState(0);
 
+    useEffect(()=>{
+        const transformSelected = ()=>{
+            let underline = document.querySelector(".underline");
+
+            (underline.style.top = `${selected* 2.5}rem`);
+        }
+        transformSelected();
+    }, [selected])
+
   return (
     <div className='experience' id='experience'>
         <div className={`title ${raleway.className} `}>
@@ -58,7 +67,7 @@ const Experience = () => {
                         return (
                             <li 
                             key={index} 
-                            className={`exp-slider-item ${
+                            className={`${firaCode.className} exp-slider-item ${
                                 index === selected && "exp-slider-item-selected"
                             }`}
                             onClick={()=> setSelected(index)}>
@@ -68,7 +77,7 @@ const Experience = () => {
                     })
                 }
             </ul>
-            <div className="exp-details">
+            <div className={`exp-details ${raleway.className}`}>
                 <div className="exp-details-position">
                     <h3>
                         <span>{experiences[selected].role}</span>
