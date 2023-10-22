@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="hero-button">
             <Button 
             text='Check out my latest'
-            link='b-furnitures.vercel.app'/>
+            link='https://b-furnitures.vercel.app'/>
         </div>
 
     </div>
