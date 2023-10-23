@@ -20,6 +20,15 @@ nav{
 
             }
         }
+        .nav-responsive-toggle{
+            display: none;
+            color: var(--theme-color);
+            font-size: var(--tlarge);
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s ease-in-out;
+            z-index: 5;
+        }
         .nav-items{
             @apply flex items-center gap-12;
             color: var(--lightest-slate);
@@ -43,12 +52,51 @@ nav{
                     a:focus{
                         outline-color: var(--theme-color);
                     }
-                    a:hover{
+                    &:hover{
                         color: var(--theme-color);
                     }
                 }
             }
 
         }
+    @media screen and (max-width: 1020px){
+        padding: 0 2rem;
+        .nav-responsive-toggle{
+            display: flex;
+            z-index: 15;
+        }
+        .nav-items{
+            @apply fixed h-screen backdrop-blur-sm right-0 w-0 opacity-0 top-0 invisible px-[10px] py-[50px] flex-col justify-center items-center;
+            background-color: var(--light-navy);
+            transition: 0.3s ease-in-out;
+            z-index: 11;
+            &-list{
+                flex-direction: column;
+            }
+        }
+        .nav-responsive{
+            /* height: 100vh; */
+            width: min(75vw, 400px);
+            visibility: visible;
+            opacity: 1;
+        }
     }
+}
+
+    .blur-nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 80px;
+        /* transition: 0.3s ease-in-out; */
+        z-index: 10;
+        background-color: rgba(10, 25, 47, 0.85);
+        box-shadow: 0 19px 30px -10px var(--navy-shadow);
+        backdrop-filter: blur(10px);
+    }
+}
+
+
+.blur{
+    @apply backdrop-blur-md -z-10;
 }

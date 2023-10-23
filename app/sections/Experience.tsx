@@ -1,8 +1,8 @@
 "use client"
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
-
 import { Fira_Code, Raleway } from 'next/font/google'
+import { motion } from 'framer-motion';
 const raleway = Raleway({subsets:['latin']})
 const firaCode = Fira_Code({subsets:['latin']})
 const Experience = () => {
@@ -39,6 +39,17 @@ const Experience = () => {
                 "I have learnt many thing after entering the college life",
                 "All my web skills were developed after entering the college"
             ]
+        },
+        {
+            name: "10th Board",
+            role: "Student",
+            url: "https://www.jmi.ac.in",
+            start: "July 2018",
+            end: "May 2019",
+            shortDescription: [
+                "I have learnt many thing after entering the college life",
+                "All my web skills were developed after entering the college"
+            ]
         }
     ]
 
@@ -47,15 +58,22 @@ const Experience = () => {
 
     useEffect(()=>{
         const transformSelected = ()=>{
-            let underline = document.querySelector(".underline");
-
-            (underline.style.top = `${selected* 2.5}rem`);
+            let underline = document.querySelector<HTMLElement>(".underline");
+            underline && (underline.style.top = `${selected* 2.5}rem`)
         }
         transformSelected();
     }, [selected])
 
   return (
-    <div className='experience' id='experience'>
+    <motion.div className='experience' id='experience'
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    transition={{ duration: 0.6 }}
+    variants={{
+    visible: { opacity: 1, y: -50 },
+    hidden: { opacity: 0, y: 0 },
+    }}>
         <div className={`title ${raleway.className} `}>
             <h2>Where I&apos;ve Worked</h2>
         </div>
@@ -71,7 +89,7 @@ const Experience = () => {
                                 index === selected && "exp-slider-item-selected"
                             }`}
                             onClick={()=> setSelected(index)}>
-                                <span>{exp.name}</span>
+                                <span className={`${firaCode.className}`}>{exp.name}</span>
                             </li>
                         )
                     })
@@ -104,7 +122,7 @@ const Experience = () => {
             </div>
         </div>
 
-    </div>
+    </motion.div>
   )
 }
 

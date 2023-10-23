@@ -8,12 +8,10 @@ import About from './sections/About'
 import Experience from './sections/Experience'
 import Project from './sections/Project'
 import Contact from './sections/Contact'
-import { Fira_Code } from 'next/font/google'
 
-const firaCode = Fira_Code({subsets: ['latin']})
 const Home = () => {
   return (
-    <div className={`app ${firaCode.className}`}>
+    <div className={`app`}>
       <Navbar/>
       <main>
         <Hero/>

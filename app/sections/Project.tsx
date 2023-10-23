@@ -4,7 +4,12 @@ import Link from "next/link";
 import React from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { Fira_Code, Raleway } from "next/font/google";
 
+
+
+const raleway = Raleway({subsets: ['latin'], weight: ["100", "200", "300", "400", "500", "600", "700"]})
+const firaCode = Fira_Code({subsets: ['latin'], weight: ["300", "400", "500", "600", "700"]})
 
 const Projects = () => {
 
@@ -71,7 +76,7 @@ const Projects = () => {
   return (
     <div className="projects" id="work">
       <motion.div
-        className="title"
+        className={`title ${raleway.className}`}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -113,14 +118,14 @@ const Projects = () => {
                   </div>
                 </div>
                 <div className="project-info">
-                  <p className="project-info-overline">Featured Project</p>
+                  <p className={`project-info-overline ${firaCode.className} `}>Featured Project</p>
                   <h3 className="project-info-title">{projectName}</h3>
                   <div className="project-info-description">
-                    <p>{projectDescription}</p>
+                    <p className={`${raleway.className}`}>{projectDescription}</p>
                   </div>
                   <ul className="project-info-tech-list">
                     {projectTech.map((tech) => (
-                      <li className="project-info-tech-list-item" key={tech}>
+                      <li className={`project-info-tech-list-item ${raleway.className}`} key={tech}>
                         {tech}
                       </li>
                     ))}
