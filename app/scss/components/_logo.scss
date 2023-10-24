@@ -4,12 +4,12 @@
 
 #logoH{
   stroke-width: 0.7;
-  stroke: #9d00ff;
-  fill: #0a192f;
+  stroke: var(--theme-color);
+  fill: var(--background-color);
   transform: scale(1);
 }
 
 #logoS{
-    fill: #9d00ff;
+    fill: var(--theme-color);
     transform: scale(1);
 }
