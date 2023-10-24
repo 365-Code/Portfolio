@@ -101,7 +101,7 @@ const Projects = () => {
             return (
               <motion.div
                 className="project"
-                key={projectName}
+              key={projectName}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}

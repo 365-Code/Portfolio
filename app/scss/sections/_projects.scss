@@ -9,8 +9,7 @@
       font-size: var(--tx2large);
       font-weight: 700;
       &::before {
-        /* content: "03."; */
-        content: "02.";
+        content: "03.";
         margin-right: 0.5rem;
         color: var(--theme-color);
       }
@@ -161,6 +160,7 @@
         .project-info {
           width: 600px;
           /* height: 300px; */
+          height: auto;
           background-color: rgba(31, 10, 44, 0.592);
           align-items: flex-start;
           padding: 1rem;
@@ -194,7 +194,8 @@
         }
         .project-info {
           width: 500px;
-          height: 300px;
+          /* height: 300px; */
+          height: fit-content;
         }
       }
     }
