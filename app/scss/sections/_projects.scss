@@ -9,7 +9,8 @@
       font-size: var(--tx2large);
       font-weight: 700;
       &::before {
-        content: "03.";
+        /* content: "03."; */
+        content: "02.";
         margin-right: 0.5rem;
         color: var(--theme-color);
       }

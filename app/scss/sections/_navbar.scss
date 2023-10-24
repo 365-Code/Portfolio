@@ -87,8 +87,9 @@ nav{
         position: fixed;
         top: 0;
         left: 0;
-        height: 80px;
-        /* transition: 0.3s ease-in-out; */
+        /* height: 80px; */
+        height: fit-content;
+        transition: 0.3s ease-in-out;
         z-index: 10;
         background-color: rgba(10, 25, 47, 0.85);
         box-shadow: 0 19px 30px -10px var(--navy-shadow);

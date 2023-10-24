@@ -10,6 +10,7 @@ import Experience from './sections/Experience'
 import Project from './sections/Project'
 import Contact from './sections/Contact'
 import Loader from './components/Loader'
+import Footer from './sections/Footer'
 
 const Home = () => {
 
@@ -33,9 +34,10 @@ const Home = () => {
             <main>
               <Hero/>
               <About/>
-              <Experience/>
+              {/* <Experience/> */}
               <Project/>
               <Contact/>
+              <Footer/>
             </main>
             <SocialIcons/>
             <Email/>

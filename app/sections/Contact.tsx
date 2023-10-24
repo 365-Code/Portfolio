@@ -21,7 +21,8 @@ const Contact = () => {
         <h2 className={`contact-title ${firaCode.className}`}>what&apos;s Next?</h2>
         <h2 className={`contact-sub-title ${raleway.className}`}>Get in Touch</h2>
         <p className={`contact-text ${raleway.className}`}>
-            Although I&apos;m not currently lookin for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
+            {/* Although I&apos;m not currently lookin for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you! */}
+            I&apos;m currently a student looking for new opportunities, my inbox is always open. Please feel free to contact me via email to discuss any potential opportunities.
         </p>
         <div className={`contact-cta ${raleway.className}`}>
             <Button text='Say Hello' link='mailto:sohailahmedbhati786@gmail.com'/>
