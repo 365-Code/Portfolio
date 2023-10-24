@@ -86,7 +86,7 @@ const Projects = () => {
           hidden: { opacity: 0, y: 0 },
         }}
       >
-        <h2>Some Things I&apos;ve Built</h2>
+        <h2 className={`${raleway.className}`}>Some Things I&apos;ve Built</h2>
       </motion.div>
       <div className="projects-container">
         {projectsData.map(

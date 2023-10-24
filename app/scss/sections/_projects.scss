@@ -1,7 +1,7 @@
 .projects {
   margin: 15rem 0;
   .title {
-    font-family: var(--raleway);
+    /* font-family: var(--raleway); */
     color: var(--lightest-slate);
     position: relative;
     h2 {
@@ -74,13 +74,13 @@
         gap: 0.5rem;
         &-overline {
           color: var(--theme-color);
-          font-family: var(--fira-code);
+          /* font-family: var(--fira-code); */
         }
         &-title {
           width: max-content;
           color: var(--lightest-slate);
           font-size: var(--txlarge);
-          font-family: var(--raleway);
+          /* font-family: var(--raleway); */
           cursor: pointer;
           transition: 0.3s ease-in-out;
           &:hover {
@@ -92,7 +92,7 @@
           border-radius: 0.2rem;
           p {
             color: var(--light-slate);
-            font-family: var(--raleway);
+            /* font-family: var(--raleway); */
             padding: 2rem;
             text-align: end;
           }
@@ -104,7 +104,7 @@
           flex-wrap: wrap;
           &-item {
             color: var(--light-slate);
-            font-family: var(--raleway);
+            /* font-family: var(--raleway); */
           }
         }
         &-links {
