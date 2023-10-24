@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#hex{
+  background-color: #0a192f;
+}
+
+#hexagon{
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  stroke-width: 0.5;
+  stroke: #9d00ff;
+  animation: 3s ease-in forwards logo-load;
+  fill: #0a192f;
+  transform: scale(0.8);
+}
+
+#S{
+  animation: 5s ease-in forwards logo;
+  fill: #0a192f;
+  transform: scale(0.8);
+}
+
+
+@keyframes logo-load{
+  0%{
+    stroke-dashoffset: 100;
+  }
+
+  70%{
+    stroke-dashoffset: 40;
+  }
+
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes logo{
+  0%{
+    fill: #0a192f;
+  }
+  100%{
+    fill: #9d00ff;
+  }
+}

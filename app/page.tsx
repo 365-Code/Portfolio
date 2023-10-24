@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import "@/app/scss/index.scss"
 import Navbar from './sections/Navbar'
 import SocialIcons from './components/SocialIcons'
@@ -8,20 +9,39 @@ import About from './sections/About'
 import Experience from './sections/Experience'
 import Project from './sections/Project'
 import Contact from './sections/Contact'
+import Loader from './components/Loader'
 
 const Home = () => {
+
+  const [loading, setLoading] = useState(true)
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setLoading(false)
+    }, 4000)
+  }, [])
+
   return (
     <div className={`app`}>
-      <Navbar/>
-      <main>
-        <Hero/>
-        <About/>
-        <Experience/>
-        <Project/>
-        <Contact/>
-      </main>
-      <SocialIcons/>
-      <Email/>
+        {
+          loading
+          ?
+          <Loader/>
+          :
+          <>
+            <Navbar/>
+            <main>
+              <Hero/>
+              <About/>
+              <Experience/>
+              <Project/>
+              <Contact/>
+            </main>
+            <SocialIcons/>
+            <Email/>
+          </>
+        }
+
     </div>
   )
 }
