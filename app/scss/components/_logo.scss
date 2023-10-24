@@ -1,4 +1,15 @@
 #logo{
     @apply h-full w-full fill-none;
-    color: var(--theme-color);
+}
+
+#logoH{
+  stroke-width: 0.7;
+  stroke: #9d00ff;
+  fill: #0a192f;
+  transform: scale(1);
+}
+
+#logoS{
+    fill: #9d00ff;
+    transform: scale(1);
 }
