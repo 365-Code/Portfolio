@@ -64,7 +64,7 @@ const Projects = () => {
         "Firebase",
         "MongoDB",
         "Express",
-        "Redux Toolkit",
+        "Context API",
       ],
       projectExternalLinks: {
         github: "",
