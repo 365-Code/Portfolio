@@ -29,13 +29,13 @@ const Projects = () => {
       ],
       projectExternalLinks: {
         github: "",
-        externalLink: "",
+        externalLink: "https://b-furnitures.vercel.app",
       },
     },
     {
       image: "/project2.png",
       projectName: "Batuno - Realtime Chat App",
-      projectLink: "https://netlify.com",
+      projectLink: "https://batuno.vercel.app",
       projectDescription:
         "This is a chat app made with React and Node.js that sends real-time messages and is highly scalable. It uses advanced JavaScript concepts like debouncing and is optimized for React. It has 300+ stars on GitHub and over 180k views on YouTube.",
       projectTech: [
@@ -49,7 +49,7 @@ const Projects = () => {
       ],
       projectExternalLinks: {
         github: "",
-        externalLink: "",
+        externalLink: "https://batuno.vercel.app",
       },
     },
     {
