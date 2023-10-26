@@ -7,13 +7,13 @@
   stroke-dashoffset: 100;
   stroke-width: 0.5;
   stroke: var(--theme-color);
-  animation: 5s ease-in forwards logo-load;
+  animation: 3s ease-in forwards logo-load;
   fill: var(--background-color);
   transform: scale(0.8);
 }
 
 #S{
-  animation: 5s ease-in forwards logo;
+  animation: 3s ease-in forwards logo;
   fill: var(--background-color);
   transform: scale(0.8);
 }

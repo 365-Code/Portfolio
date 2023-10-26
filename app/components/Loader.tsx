@@ -5,7 +5,7 @@ const Loader = () => {
         <div className='w-screen h-screen flex items-center justify-center'>
             <svg 
             width="200px" 
-            height="200px" 
+            height="200px"
             viewBox="-51.2 -51.2 230.40 230.40" 
             preserveAspectRatio="xMidYMid meet" 
             fill="#000000">
