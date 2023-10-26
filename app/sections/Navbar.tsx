@@ -88,7 +88,12 @@ const Navbar = () => {
                   sectionLinks.map(({name, link},index)=>(
                     <motion.li 
                     key={name} 
-                    onClick={()=>(setResponsiveNavVisible(false))} 
+                    onClick={(e)=>{
+                      e.stopPropagation();
+                      setResponsiveNavVisible(true)
+                      let main = document.querySelector("main")
+                      main?.classList.add("blur")
+                    }}
                     className='nav-items-list-item'
                     initial={{opacity: 0, y: -25}}
                     animate={{opacity: 1, y: 0}}
