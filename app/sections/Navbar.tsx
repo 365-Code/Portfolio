@@ -88,6 +88,13 @@ const Navbar = () => {
                   sectionLinks.map(({name, link},index)=>(
                     <motion.li 
                     key={name} 
+                    onClick={
+                      (e)=>{
+                      e.stopPropagation();
+                      setResponsiveNavVisible(false)
+                      let main = document.querySelector("main")
+                      main?.classList.remove("blur")
+                    }}
                     className='nav-items-list-item'
                     initial={{opacity: 0, y: -25}}
                     animate={{opacity: 1, y: 0}}
@@ -99,12 +106,6 @@ const Navbar = () => {
                     >
                       <Link 
                       href={link}
-                      onClick={(e)=>{
-                        e.stopPropagation();
-                        setResponsiveNavVisible(true)
-                        let main = document.querySelector("main")
-                        main?.classList.add("blur")
-                      }}
                       className={`nav-items-list-item-link ${firaCode.className}`}>{name}</Link>
                     </motion.li>
                   ))
