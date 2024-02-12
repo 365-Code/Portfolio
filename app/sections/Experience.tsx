@@ -101,7 +101,7 @@ const Experience = () => {
                         <span>{experiences[selected].role}</span>
                         <span> @ </span>
                         <span className='exp-details-position-company'>
-                            <Link className='link' href={experiences[selected].url}>{experiences[selected].url}</Link>
+                            <Link className='link' target='_blank' href={experiences[selected].url}>{experiences[selected].url}</Link>
                         </span>
                     </h3>
                     <p className="exp-details-range">
