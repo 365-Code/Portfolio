@@ -23,14 +23,18 @@ const SocialIcons = () => {
       icon: <FiGithub />,
       link: "https:/www.github.com/365-Code",
     },
-    { name: "Youtube", icon: <FiYoutube />, link: "https:/www.youtube.com" },
-    { name: "LinkedIn", icon: <FiLinkedin />, link: "https:/www.linkedin.com" },
+    // { name: "Youtube", icon: <FiYoutube />, link: "https:/www.youtube.com/" },
     {
-      name: "Instagram",
-      icon: <FiInstagram />,
-      link: "https:/www.instagram.com",
+      name: "LinkedIn",
+      icon: <FiLinkedin />,
+      link: "https:/www.linkedin.com/in/sohail-ahmed-506244286",
     },
-    { name: "Twitter", icon: <FiTwitter />, link: "https:/www.twitter.com" },
+    // {
+    //   name: "Instagram",
+    //   icon: <FiInstagram />,
+    //   link: "https:/www.instagram.com",
+    // },
+    // { name: "Twitter", icon: <FiTwitter />, link: "https:/www.twitter.com" },
   ];
 
   return (

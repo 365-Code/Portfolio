@@ -27,8 +27,6 @@ const Contact = () => {
         <div className={`contact-cta ${raleway.className}`}>
             <Button text='Say Hello' link='mailto:sohailahmedbhati786@gmail.com'/>
         </div>
-
-
     </motion.div>
   )
 }
