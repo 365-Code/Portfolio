@@ -18,6 +18,23 @@ const firaCode = Fira_Code({
 const Projects = () => {
   const projectsData = [
     {
+      image: "/anizone.png",
+      projectName: "Anizone - Anime Streaming Website",
+      projectLink: "https://anizone.vercel.app",
+      projectDescription:
+        "Anizone is a free anime streaming. Users can browse a collection of anime titles. Detailed information about each anime, including synopsis, genres, and release dates The website features a modern and intuitive design, thanks to Tailwind CSS.",
+      projectTech: [
+        "Next js",
+        "Typescript",
+        "Consumet Api",
+        "Tailwind css",
+      ],
+      projectExternalLinks: {
+        github: "https://github.com/365-Code/anizone",
+        externalLink: "https://anizone.vercel.app",
+      },
+    },
+    {
       image: "/batuno-v2.jpeg",
       projectName: "Batuno - Realtime Chat App",
       projectLink: "https://batuno.vercel.app",
@@ -94,7 +111,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="projects" id="work">
+    <div className="projects" id="project">
       <motion.div
         className={`title ${raleway.className}`}
         initial="hidden"
@@ -120,7 +137,7 @@ const Projects = () => {
           }) => {
             return (
               <motion.div
-                className="project"
+                className="project overflow-hidden group/prj"
                 key={projectName}
                 initial="hidden"
                 whileInView="visible"
@@ -132,9 +149,15 @@ const Projects = () => {
                 }}
               >
                 <div className="project-image">
-                  <div className="project-image-overlay"></div>
+                  <div className="project-image-overlay group-hover/prj:bg-transparent"></div>
                   <div className="project-image-container">
-                    <Image src={image} fill alt={projectName} quality={100} className="object-cover"/>
+                    <Image
+                      src={image}
+                      fill
+                      alt={projectName}
+                      quality={100}
+                      className="object-cover group-hover/prj:filter-none"
+                    />
                   </div>
                 </div>
                 <div className="project-info">
@@ -160,7 +183,7 @@ const Projects = () => {
                   <ul className="project-info-links">
                     <li className="project-info-links-item">
                       <Link
-                      target="_blank"
+                        target="_blank"
                         href={projectExternalLinks.github}
                         className="project-info-links-item-link"
                       >
@@ -169,7 +192,7 @@ const Projects = () => {
                     </li>
                     <li className="project-info-links-item">
                       <Link
-                      target="_blank"
+                        target="_blank"
                         href={projectExternalLinks.externalLink}
                         className="project-info-links-item-link"
                       >

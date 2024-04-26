@@ -75,7 +75,7 @@ const Hero = () => {
       >
         <Button
           text="Check out my latest"
-          link="https://b-furnitures.vercel.app"
+          link="https://github.com/365-Code/Anizone"
         />
       </motion.div>
     </div>
