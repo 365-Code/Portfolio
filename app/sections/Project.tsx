@@ -30,7 +30,7 @@ const Projects = () => {
         "Tailwind css",
       ],
       projectExternalLinks: {
-        github: "https://github.com/365-Code/anizone",
+        github: "https://github.com/365-Code/anizone/",
         externalLink: "https://anizone.vercel.app",
       },
     },
@@ -48,7 +48,7 @@ const Projects = () => {
         "Context API",
       ],
       projectExternalLinks: {
-        github: "https://github.com/365-Code/Batuno-V2",
+        github: "https://github.com/365-Code/Batuno-V2/",
         externalLink: "https://batuno-v2.vercel.app",
       },
     },
@@ -67,7 +67,7 @@ const Projects = () => {
         "Firebase Authentication",
       ],
       projectExternalLinks: {
-        github: "https://github.com/365-Code/MineArt",
+        github: "https://github.com/365-Code/MineArt/",
         externalLink: "https://mine-art.vercel.app",
       },
     },
@@ -86,7 +86,7 @@ const Projects = () => {
         "Context API",
       ],
       projectExternalLinks: {
-        github: "https://github.com/365-Code/THink",
+        github: "https://github.com/365-Code/THink/",
         externalLink: "https://think-psi.vercel.app",
       },
     },
@@ -104,7 +104,7 @@ const Projects = () => {
         "REST API",
       ],
       projectExternalLinks: {
-        github: "https://github.com/365-Code/BFurnitures",
+        github: "https://github.com/365-Code/BFurnitures/",
         externalLink: "https://b-furnitures.vercel.app",
       },
     },

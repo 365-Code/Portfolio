@@ -21,13 +21,13 @@ const SocialIcons = () => {
     {
       name: "Github",
       icon: <FiGithub />,
-      link: "https:/www.github.com/365-Code",
+      link: "https:/www.github.com/365-Code/",
     },
     // { name: "Youtube", icon: <FiYoutube />, link: "https:/www.youtube.com/" },
     {
       name: "LinkedIn",
       icon: <FiLinkedin />,
-      link: "https:/www.linkedin.com/in/sohail-ahmed-506244286",
+      link: "https:/www.linkedin.com/in/sohail-ahmed-506244286/",
     },
     // {
     //   name: "Instagram",
