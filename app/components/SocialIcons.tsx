@@ -10,6 +10,7 @@ import {
   FiLinkedin,
   FiTwitter,
 } from "react-icons/fi";
+import { SiLeetcode } from "react-icons/si";
 
 const firaCode = Fira_Code({
   subsets: ["latin"],
@@ -28,6 +29,11 @@ const SocialIcons = () => {
       name: "LinkedIn",
       icon: <FiLinkedin />,
       link: "https:/www.linkedin.com/in/sohail-ahmed-506244286/",
+    },
+    {
+      name: "LeetCode",
+      icon: <SiLeetcode />,
+      link: "https:/www.leetcode.com/sohail_ahmed",
     },
     // {
     //   name: "Instagram",
@@ -63,13 +69,13 @@ const SocialIcons = () => {
                 delay: 2.0 + (socialLinks.length - index) * 0.1,
               }}
             >
-              <Link
+              <a
                 href={link}
                 target="_blank"
                 className="social-icons-list-item-link"
               >
                 {icon}
-              </Link>
+              </a>
             </motion.li>
           );
         })}

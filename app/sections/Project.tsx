@@ -23,12 +23,7 @@ const Projects = () => {
       projectLink: "https://anizone.vercel.app",
       projectDescription:
         "Anizone is a free anime streaming. Users can browse a collection of anime titles. Detailed information about each anime, including synopsis, genres, and release dates The website features a modern and intuitive design, thanks to Tailwind CSS.",
-      projectTech: [
-        "Next js",
-        "Typescript",
-        "Consumet Api",
-        "Tailwind css",
-      ],
+      projectTech: ["Next js", "Typescript", "Consumet Api", "Tailwind css"],
       projectExternalLinks: {
         github: "https://github.com/365-Code/anizone/",
         externalLink: "https://anizone.vercel.app",
