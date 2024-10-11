@@ -11,15 +11,16 @@ import Project from "./sections/Project";
 import Contact from "./sections/Contact";
 import Loader from "./components/Loader";
 import Footer from "./sections/Footer";
+import OtherProject from "./sections/OtherProject";
 
 const Home = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 3000);
+  // }, []);
 
   return (
     <div className={`app`}>
@@ -33,6 +34,7 @@ const Home = () => {
             <About />
             {/* <Experience/> */}
             <Project />
+            <OtherProject />
             <Contact />
             <Footer />
           </main>

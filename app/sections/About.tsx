@@ -27,15 +27,24 @@ const About = () => {
       <div className="about-grid">
         <div className="about-grid-info">
           <p className={`about-grid-info-text ${raleway.className}`}>
-            Bonjour! My name is sam, and I am passionate about creating content
-            for the web. My interest in web development was sparked in 2022 when
-            I created my first project of a ToDo app, just a simple to do
-            application
+            Hello! My name is Sohail, and I love creating things that live on
+            the web. My journey in web development began when I started
+            experimenting with code, editing custom web pages and learning the
+            nuances of HTML, CSS, and JavaScript.
           </p>
           <p className={`about-grid-info-text ${raleway.className}`}>
-            Presently, I am a college student. I have developed skills for both
-            frontend and backend development as well.
+            Fast-forward to today, I&apos;m a full-stack developer interning at
+            <a
+              href="https://buildfastwithai.com"
+              className="text-[var(--theme-color)] ml-1"
+            >
+              BuildFastWithAI
+            </a>
+            , honing my skills in Next.js. My focus is on building intuitive,
+            scalable digital experiences that prioritize accessibility and
+            performance.
           </p>
+          <p></p>
           {/* <p className="about-grid-info-text">
                     
                 </p> */}
@@ -43,20 +52,27 @@ const About = () => {
             Here are a few technologies, I&apos;ve been working with recently:
           </p>
           <ul className={`about-grid-info-list ${raleway.className}`}>
-            <li className="about-grid-info-list-item">Next</li>
-            <li className="about-grid-info-list-item">React</li>
+            <li className="about-grid-info-list-item">Vercel AI SDK</li>
+            <li className="about-grid-info-list-item">Next JS</li>
+            <li className="about-grid-info-list-item">React JS</li>
             <li className="about-grid-info-list-item">Typescript</li>
-            <li className="about-grid-info-list-item">Node js</li>
+            <li className="about-grid-info-list-item">Node JS</li>
             <li className="about-grid-info-list-item">MongoDB</li>
-            <li className="about-grid-info-list-item">Firestore</li>
-            <li className="about-grid-info-list-item">HTML, CSS, JS</li>
+            <li className="about-grid-info-list-item">Supabase</li>
+            <li className="about-grid-info-list-item">FireBase</li>
+            <li className="about-grid-info-list-item">JavaScript</li>
+            <li className="about-grid-info-list-item">HTML, CSS</li>
           </ul>
         </div>
         <div className="about-grid-photo">
           <div className="overlay"></div>
           <div className="overlay-border"></div>
           <div className="about-grid-photo-container overflow-hidden">
-            <Image src={sam} alt="sam" className="object-cover w-full h-full object-top" />
+            <Image
+              src={sam}
+              alt="sam"
+              className="object-cover w-full h-full object-top"
+            />
           </div>
         </div>
       </div>

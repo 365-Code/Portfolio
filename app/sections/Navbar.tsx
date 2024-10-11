@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 import Logo from "../components/Logo";
 import Button from "../components/Button";
 import { Fira_Code } from "next/font/google";
-import { MdMenu, MdClose } from "react-icons/md";
 import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
 
 const firaCode = Fira_Code({ subsets: ["latin"] });
 
@@ -61,7 +61,7 @@ const Navbar = () => {
                 main?.classList.remove("blur");
               }}
             >
-              <MdClose />
+              <X />
             </button>
           ) : (
             <button
@@ -72,7 +72,7 @@ const Navbar = () => {
                 main?.classList.add("blur");
               }}
             >
-              <MdMenu />
+              <Menu />
             </button>
           )}
         </motion.div>
